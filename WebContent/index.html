@@ -1,0 +1,21 @@
+<!doctype html>
+<html ng-app="demoApp">
+
+  <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <title>My AngularJS App</title>
+    <script src="angularDemo.js"></script>
+  </head>
+  
+  <form name="formDados">
+  <body>
+  <div ng-controller="demoCtrl">
+  Welcome {{message}}
+  
+  <input type="text" ng-model="lancamento.cpf" name="cpf" cpf-valido />
+  <span ng-show="formDados.cpf.$error.cpfValido">CPF Inválido</span>
+  </div>
+  </body>
+  
+  </form>
+</html>
